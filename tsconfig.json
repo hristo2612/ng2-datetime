@@ -12,8 +12,8 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "ngx-datetime": [
-        "dist/ngx-datetime"
+      "ngx-datetime-16": [
+        "dist/ngx-datetime-16"
       ]
     },
     "declaration": false,

@@ -1,9 +1,33 @@
 {
-  "name": "ngx-datetime",
-  "version": "0.0.1",
+  "name": "ngx-datetime-16",
+  "version": "16.2.0",
+  "description": "Update of ng2-datetime that is compatible with Angular v16+",
+  "keywords": [
+    "ng2-datetime",
+    "ngx-datetime",
+    "angular",
+    "datetime"
+  ],
+  "author": {
+    "name": "Hristo Bogoev",
+    "email": "hristoapps@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hristo2612/ng2-datetime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hristo2612/ng2-datetime/issues"
+  },
+  "homepage": "https://github.com/hristo2612/ng2-datetime#readme",
   "peerDependencies": {
     "@angular/common": "^16.2.0",
-    "@angular/core": "^16.2.0"
+    "@angular/core": "^16.2.0",
+    "bootstrap": ">=3.0.0 <=5.x",
+    "bootstrap-datepicker": ">=1.6.0 <=1.10.0",
+    "bootstrap-timepicker": ">=0.5.0 <=0.5.2",
+    "jquery": ">=3.3.0 <=3.7.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

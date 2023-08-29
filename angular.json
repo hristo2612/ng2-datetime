@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-datetime": {
+    "ngx-datetime-16": {
       "projectType": "library",
       "root": "projects/ngx-datetime",
       "sourceRoot": "projects/ngx-datetime/src",
@@ -28,10 +28,7 @@
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
             "tsConfig": "projects/ngx-datetime/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -53,9 +50,7 @@
             "outputPath": "dist/playground",
             "index": "projects/playground/src/index.html",
             "main": "projects/playground/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/playground/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -63,9 +58,16 @@
               "projects/playground/src/assets"
             ],
             "styles": [
-              "projects/playground/src/styles.scss"
+              "projects/playground/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css",
+              "node_modules/bootstrap-timepicker/css/bootstrap-timepicker.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js",
+              "node_modules/bootstrap-timepicker/js/bootstrap-timepicker.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -115,19 +117,14 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/playground/tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
               "projects/playground/src/favicon.ico",
               "projects/playground/src/assets"
             ],
-            "styles": [
-              "projects/playground/src/styles.scss"
-            ],
+            "styles": ["projects/playground/src/styles.scss"],
             "scripts": []
           }
         }
